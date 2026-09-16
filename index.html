@@ -1,0 +1,3070 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pamirsolutions | Premium Gebäudereinigung</title>
+
+    <meta name="description"
+          content="Pamirsolutions – professionelle Gebäudereinigung, Büroreinigung, Glasreinigung, Unterhaltsreinigung und Grundreinigung. Qualität, Zuverlässigkeit und höchste Ansprüche.">
+
+    <meta name="keywords"
+          content="Pamirsolutions, Gebäudereinigung, Büroreinigung, Glasreinigung, Unterhaltsreinigung, Grundreinigung, Reinigungsfirma">
+
+    <meta name="author" content="Pamirsolutions">
+
+    <style>
+
+        /* =========================================================
+           PAMIRSOLUTIONS
+           PREMIUM GERMAN CORPORATE WEBSITE
+           ========================================================= */
+
+        :root {
+            --dunkelblau: #071722;
+            --blau: #0d2534;
+            --blau-hell: #16394c;
+
+            --gold: #c6a15b;
+            --gold-hell: #e1c783;
+            --gold-dunkel: #9f7d3e;
+
+            --elfenbein: #f7f4ed;
+            --weiss: #ffffff;
+
+            --text: #26343d;
+            --text-hell: #6f7a80;
+
+            --linie: #e4ded2;
+
+            --schatten:
+                0 25px 70px rgba(5, 19, 29, 0.13);
+
+            --schatten-klein:
+                0 12px 35px rgba(5, 19, 29, 0.09);
+        }
+
+
+        /* =========================================================
+           GRUNDLAGEN
+           ========================================================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            color: var(--text);
+            background: var(--weiss);
+            line-height: 1.7;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button,
+        input,
+        textarea,
+        select {
+            font-family: inherit;
+        }
+
+        .container {
+            width: min(1200px, 92%);
+            margin: 0 auto;
+        }
+
+
+        /* =========================================================
+           OBERER INFOBEREICH
+           ========================================================= */
+
+        .infoleiste {
+            background: #041019;
+            color: #cbd5da;
+            font-size: 12px;
+            letter-spacing: 0.3px;
+            padding: 9px 0;
+        }
+
+        .infoleiste-inhalt {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .info-links {
+            display: flex;
+            gap: 25px;
+        }
+
+
+        /* =========================================================
+           NAVIGATION
+           ========================================================= */
+
+        .navigation {
+            position: sticky;
+            top: 0;
+            z-index: 999;
+
+            background:
+                rgba(7, 23, 34, 0.97);
+
+            backdrop-filter: blur(16px);
+
+            border-bottom:
+                1px solid rgba(255,255,255,0.08);
+        }
+
+        .nav-inner {
+            min-height: 82px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        /* LOGO */
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+        }
+
+        .logo-symbol {
+            width: 45px;
+            height: 45px;
+
+            border:
+                1px solid var(--gold);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: var(--gold-hell);
+
+            font-family: Georgia, serif;
+            font-size: 21px;
+
+            position: relative;
+        }
+
+        .logo-symbol::after {
+            content: "";
+
+            position: absolute;
+
+            width: 31px;
+            height: 31px;
+
+            border:
+                1px solid rgba(225,199,131,0.4);
+        }
+
+        .logo-name {
+            color: white;
+
+            font-size: 21px;
+            font-weight: 700;
+
+            letter-spacing: 2.5px;
+        }
+
+        .logo-name span {
+            color: var(--gold-hell);
+        }
+
+        .logo-subtitle {
+            display: block;
+
+            color: #9eabb1;
+
+            font-size: 8px;
+
+            letter-spacing: 3px;
+
+            margin-top: 2px;
+        }
+
+
+        /* NAVIGATION LINKS */
+
+        .menue {
+            display: flex;
+            align-items: center;
+            gap: 31px;
+
+            list-style: none;
+        }
+
+        .menue a {
+            color: #e3e9ec;
+
+            font-size: 13px;
+            font-weight: 600;
+
+            transition:
+                color 0.3s ease;
+        }
+
+        .menue a:hover {
+            color: var(--gold-hell);
+        }
+
+        .menue-angebot {
+            border:
+                1px solid var(--gold);
+
+            padding:
+                11px 19px;
+
+            color: var(--gold-hell) !important;
+        }
+
+        .menue-angebot:hover {
+            background: var(--gold);
+            color: var(--dunkelblau) !important;
+        }
+
+
+        /* =========================================================
+           HERO
+           ========================================================= */
+
+        .hero {
+            min-height: 790px;
+
+            display: flex;
+            align-items: center;
+
+            position: relative;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(3, 14, 22, 0.96) 0%,
+                    rgba(3, 14, 22, 0.87) 42%,
+                    rgba(3, 14, 22, 0.30) 100%
+                ),
+
+                url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=2200&q=90")
+                center / cover no-repeat;
+        }
+
+
+        .hero-inhalt {
+            max-width: 760px;
+
+            color: white;
+
+            padding:
+                100px 0;
+        }
+
+        .kleine-ueberschrift {
+            color: var(--gold-hell);
+
+            font-size: 12px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 4px;
+
+            font-weight: 700;
+
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-weight: 400;
+
+            font-size:
+                clamp(48px, 7vw, 86px);
+
+            line-height: 1.04;
+
+            margin-bottom: 28px;
+        }
+
+        .hero h1 span {
+            color: var(--gold-hell);
+        }
+
+        .hero-text {
+            max-width: 650px;
+
+            color: #d5dfe3;
+
+            font-size: 18px;
+
+            margin-bottom: 35px;
+        }
+
+
+        /* BUTTONS */
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 14px;
+        }
+
+        .button {
+            display: inline-flex;
+
+            align-items: center;
+            justify-content: center;
+
+            min-height: 51px;
+
+            padding:
+                0 27px;
+
+            border-radius: 2px;
+
+            font-size: 13px;
+            font-weight: 700;
+
+            transition:
+                all 0.3s ease;
+        }
+
+        .button-gold {
+            background: var(--gold);
+            color: var(--dunkelblau);
+        }
+
+        .button-gold:hover {
+            background: var(--gold-hell);
+
+            transform:
+                translateY(-2px);
+        }
+
+        .button-transparent {
+            color: white;
+
+            border:
+                1px solid rgba(255,255,255,0.45);
+        }
+
+        .button-transparent:hover {
+            background: white;
+            color: var(--dunkelblau);
+        }
+
+
+        /* =========================================================
+           QUALITÄTSLEISTE
+           ========================================================= */
+
+        .qualitaetsleiste {
+            background: var(--elfenbein);
+
+            border-bottom:
+                1px solid var(--linie);
+        }
+
+        .qualitaets-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+        }
+
+        .qualitaet {
+            padding: 27px 20px;
+
+            text-align: center;
+
+            border-right:
+                1px solid var(--linie);
+        }
+
+        .qualitaet:last-child {
+            border-right: none;
+        }
+
+        .qualitaet-zahl {
+            color: var(--dunkelblau);
+
+            font-family: Georgia, serif;
+
+            font-size: 24px;
+
+            margin-bottom: 3px;
+        }
+
+        .qualitaet-text {
+            color: var(--text-hell);
+
+            font-size: 12px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+        }
+
+
+        /* =========================================================
+           ALLGEMEINE SEKTIONEN
+           ========================================================= */
+
+        section {
+            padding: 110px 0;
+        }
+
+        .section-kopf {
+            max-width: 760px;
+
+            margin-bottom: 60px;
+        }
+
+        .section-kopf.mitte {
+            text-align: center;
+
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-kopf .kleine-ueberschrift {
+            color: var(--gold-dunkel);
+
+            margin-bottom: 12px;
+        }
+
+        .section-kopf h2 {
+            color: var(--dunkelblau);
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-weight: 400;
+
+            font-size:
+                clamp(36px, 5vw, 57px);
+
+            line-height: 1.1;
+
+            margin-bottom: 20px;
+        }
+
+        .section-kopf p {
+            color: var(--text-hell);
+
+            font-size: 16px;
+        }
+
+
+        /* =========================================================
+           ÜBER UNS
+           ========================================================= */
+
+        .ueber-uns {
+            background: white;
+        }
+
+        .ueber-grid {
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 80px;
+
+            align-items: center;
+        }
+
+        .bild-rahmen {
+            position: relative;
+        }
+
+        .bild-rahmen img {
+            width: 100%;
+
+            height: 590px;
+
+            object-fit: cover;
+
+            box-shadow:
+                var(--schatten);
+        }
+
+        .bild-plakette {
+            position: absolute;
+
+            bottom: 30px;
+            right: -25px;
+
+            background:
+                var(--dunkelblau);
+
+            color: white;
+
+            padding:
+                25px 30px;
+
+            border-left:
+                4px solid var(--gold);
+        }
+
+        .bild-plakette strong {
+            display: block;
+
+            color: var(--gold-hell);
+
+            font-family: Georgia, serif;
+
+            font-size: 26px;
+        }
+
+        .bild-plakette span {
+            font-size: 11px;
+
+            color: #c6d0d5;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+        }
+
+        .ueber-text h3 {
+            color: var(--dunkelblau);
+
+            font-family: Georgia, serif;
+
+            font-size: 30px;
+
+            font-weight: 400;
+
+            margin-bottom: 18px;
+        }
+
+        .ueber-text p {
+            color: var(--text-hell);
+
+            margin-bottom: 18px;
+        }
+
+        .vorteile {
+            list-style: none;
+
+            margin:
+                30px 0;
+        }
+
+        .vorteile li {
+            display: flex;
+
+            align-items: center;
+
+            gap: 13px;
+
+            margin-bottom: 13px;
+
+            font-size: 14px;
+
+            font-weight: 600;
+
+            color: var(--text);
+        }
+
+        .vorteile li::before {
+            content: "✓";
+
+            width: 23px;
+            height: 23px;
+
+            flex-shrink: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: var(--gold);
+
+            color: var(--dunkelblau);
+
+            border-radius: 50%;
+
+            font-size: 12px;
+        }
+
+
+        /* =========================================================
+           LEISTUNGEN
+           ========================================================= */
+
+        .leistungen {
+            background: var(--elfenbein);
+        }
+
+        .leistungen-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 24px;
+        }
+
+        .leistung {
+            background: white;
+
+            border:
+                1px solid #e8e1d5;
+
+            transition:
+                transform 0.35s ease,
+                box-shadow 0.35s ease,
+                border-color 0.35s ease;
+        }
+
+        .leistung:hover {
+            transform:
+                translateY(-8px);
+
+            box-shadow:
+                var(--schatten);
+
+            border-color:
+                var(--gold);
+        }
+
+        .leistung-bild {
+            height: 235px;
+
+            overflow: hidden;
+        }
+
+        .leistung-bild img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+            transition:
+                transform 0.5s ease;
+        }
+
+        .leistung:hover img {
+            transform:
+                scale(1.06);
+        }
+
+        .leistung-inhalt {
+            padding: 29px;
+        }
+
+        .leistung-nummer {
+            color: var(--gold-dunkel);
+
+            font-family: Georgia, serif;
+
+            font-size: 13px;
+
+            margin-bottom: 7px;
+        }
+
+        .leistung h3 {
+            color: var(--dunkelblau);
+
+            font-family: Georgia, serif;
+
+            font-size: 24px;
+
+            font-weight: 400;
+
+            margin-bottom: 9px;
+        }
+
+        .leistung p {
+            color: var(--text-hell);
+
+            font-size: 14px;
+        }
+
+
+        /* =========================================================
+           PREMIUM BANNER
+           ========================================================= */
+
+        .premium-banner {
+            padding:
+                80px 0;
+
+            background:
+                linear-gradient(
+                    120deg,
+                    #071722,
+                    #123044
+                );
+        }
+
+        .premium-banner-inhalt {
+            display: grid;
+
+            grid-template-columns:
+                1.5fr 1fr;
+
+            gap: 60px;
+
+            align-items: center;
+        }
+
+        .premium-banner h2 {
+            color: white;
+
+            font-family: Georgia, serif;
+
+            font-weight: 400;
+
+            font-size:
+                clamp(35px, 5vw, 52px);
+
+            line-height: 1.15;
+        }
+
+        .premium-banner h2 span {
+            color: var(--gold-hell);
+        }
+
+        .premium-banner p {
+            color: #b9c6cc;
+
+            margin-top: 17px;
+
+            max-width: 650px;
+        }
+
+        .premium-box {
+            padding: 35px;
+
+            border:
+                1px solid rgba(225,199,131,0.3);
+
+            background:
+                rgba(255,255,255,0.025);
+        }
+
+        .premium-box strong {
+            display: block;
+
+            color: var(--gold-hell);
+
+            font-family: Georgia, serif;
+
+            font-size: 24px;
+
+            margin-bottom: 9px;
+        }
+
+        .premium-box p {
+            margin: 0;
+
+            font-size: 14px;
+        }
+
+
+        /* =========================================================
+           WARUM WIR
+           ========================================================= */
+
+        .warum {
+            background: white;
+        }
+
+        .warum-grid {
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 70px;
+
+            align-items: center;
+        }
+
+        .warum-bild img {
+            width: 100%;
+            height: 570px;
+
+            object-fit: cover;
+
+            box-shadow:
+                var(--schatten);
+        }
+
+        .warum-punkte {
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 20px;
+        }
+
+        .warum-punkt {
+            padding: 27px;
+
+            border:
+                1px solid var(--linie);
+
+            background:
+                #fff;
+
+            transition:
+                0.3s ease;
+        }
+
+        .warum-punkt:hover {
+            border-color:
+                var(--gold);
+
+            box-shadow:
+                var(--schatten-klein);
+        }
+
+        .warum-icon {
+            color: var(--gold-dunkel);
+
+            font-size: 25px;
+
+            margin-bottom: 12px;
+        }
+
+        .warum-punkt h3 {
+            color: var(--dunkelblau);
+
+            font-family: Georgia, serif;
+
+            font-weight: 400;
+
+            font-size: 20px;
+
+            margin-bottom: 7px;
+        }
+
+        .warum-punkt p {
+            color: var(--text-hell);
+
+            font-size: 13px;
+        }
+
+
+        /* =========================================================
+           GALERIE
+           ========================================================= */
+
+        .galerie {
+            background: var(--elfenbein);
+        }
+
+        .galerie-grid {
+            display: grid;
+
+            grid-template-columns:
+                2fr 1fr 1fr;
+
+            grid-template-rows:
+                260px 260px;
+
+            gap: 14px;
+        }
+
+        .galerie-bild {
+            overflow: hidden;
+        }
+
+        .galerie-bild:first-child {
+            grid-row:
+                span 2;
+        }
+
+        .galerie-bild img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+            transition:
+                transform 0.5s ease;
+        }
+
+        .galerie-bild:hover img {
+            transform:
+                scale(1.05);
+        }
+
+
+        /* =========================================================
+           ABLAUF
+           ========================================================= */
+
+        .ablauf {
+            background: white;
+        }
+
+        .ablauf-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 20px;
+        }
+
+        .ablauf-schritt {
+            text-align: center;
+
+            padding: 25px;
+        }
+
+        .ablauf-kreis {
+            width: 62px;
+            height: 62px;
+
+            border:
+                1px solid var(--gold);
+
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin:
+                0 auto 20px;
+
+            color: var(--gold-dunkel);
+
+            font-family: Georgia, serif;
+
+            font-size: 21px;
+        }
+
+        .ablauf-schritt h3 {
+            color: var(--dunkelblau);
+
+            font-family: Georgia, serif;
+
+            font-size: 21px;
+
+            font-weight: 400;
+
+            margin-bottom: 8px;
+        }
+
+        .ablauf-schritt p {
+            color: var(--text-hell);
+
+            font-size: 13px;
+        }
+
+
+        /* =========================================================
+           KUNDENSTIMME
+           ========================================================= */
+
+        .kundenstimme {
+            color: white;
+
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    rgba(5,18,28,0.92),
+                    rgba(5,18,28,0.92)
+                ),
+
+                url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2200&q=90")
+                center / cover;
+        }
+
+        .zitat {
+            max-width: 850px;
+
+            margin: auto;
+        }
+
+        .zitat-symbol {
+            color: var(--gold);
+
+            font-family: Georgia, serif;
+
+            font-size: 70px;
+
+            line-height: 0.7;
+        }
+
+        .zitat p {
+            font-family: Georgia, serif;
+
+            font-size:
+                clamp(23px, 3vw, 34px);
+
+            line-height: 1.45;
+
+            margin:
+                25px 0;
+        }
+
+        .zitat small {
+            color: var(--gold-hell);
+
+            text-transform: uppercase;
+
+            letter-spacing: 3px;
+
+            font-size: 11px;
+        }
+
+
+        /* =========================================================
+           CTA
+           ========================================================= */
+
+        .cta {
+            padding:
+                75px 0;
+
+            background:
+                linear-gradient(
+                    110deg,
+                    var(--gold),
+                    var(--gold-hell)
+                );
+        }
+
+        .cta-inhalt {
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            gap: 35px;
+        }
+
+        .cta h2 {
+            color: var(--dunkelblau);
+
+            font-family: Georgia, serif;
+
+            font-weight: 400;
+
+            font-size:
+                clamp(32px, 4vw, 45px);
+
+            line-height: 1.15;
+        }
+
+        .cta p {
+            color: #35434a;
+
+            margin-top: 8px;
+        }
+
+        .cta .button {
+            background: var(--dunkelblau);
+
+            color: white;
+
+            white-space: nowrap;
+        }
+
+        .cta .button:hover {
+            background: var(--blau);
+        }
+
+
+        /* =========================================================
+           KONTAKT
+           ========================================================= */
+
+        .kontakt {
+            background: white;
+        }
+
+        .kontakt-grid {
+            display: grid;
+
+            grid-template-columns:
+                0.85fr 1.15fr;
+
+            gap: 60px;
+        }
+
+        .kontakt-box {
+            background: var(--dunkelblau);
+
+            color: white;
+
+            padding: 45px;
+        }
+
+        .kontakt-box h3 {
+            font-family: Georgia, serif;
+
+            font-weight: 400;
+
+            font-size: 31px;
+
+            margin-bottom: 17px;
+        }
+
+        .kontakt-box > p {
+            color: #bac7cd;
+
+            font-size: 14px;
+
+            margin-bottom: 25px;
+        }
+
+        .kontakt-detail {
+            padding:
+                17px 0;
+
+            border-bottom:
+                1px solid rgba(255,255,255,0.11);
+        }
+
+        .kontakt-detail strong {
+            display: block;
+
+            color: var(--gold-hell);
+
+            text-transform: uppercase;
+
+            letter-spacing: 1.5px;
+
+            font-size: 10px;
+
+            margin-bottom: 4px;
+        }
+
+        .kontakt-detail span,
+        .kontakt-detail a {
+            color: #e1e7ea;
+
+            font-size: 14px;
+        }
+
+
+        /* FORMULAR */
+
+        .formular h3 {
+            color: var(--dunkelblau);
+
+            font-family: Georgia, serif;
+
+            font-weight: 400;
+
+            font-size: 31px;
+
+            margin-bottom: 25px;
+        }
+
+        .formular-grid {
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 17px;
+        }
+
+        .feld {
+            margin-bottom: 17px;
+        }
+
+        .feld.ganz {
+            grid-column:
+                1 / -1;
+        }
+
+        .feld label {
+            display: block;
+
+            color: var(--dunkelblau);
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            margin-bottom: 7px;
+        }
+
+        .feld input,
+        .feld select,
+        .feld textarea {
+            width: 100%;
+
+            border:
+                1px solid #d8dedf;
+
+            background:
+                #fbfcfc;
+
+            padding:
+                14px 15px;
+
+            outline: none;
+
+            font-size: 14px;
+
+            color: var(--text);
+
+            transition:
+                border-color 0.3s ease;
+        }
+
+        .feld input:focus,
+        .feld select:focus,
+        .feld textarea:focus {
+            border-color:
+                var(--gold);
+        }
+
+        .feld textarea {
+            min-height: 150px;
+
+            resize: vertical;
+        }
+
+
+        /* =========================================================
+           FOOTER
+           ========================================================= */
+
+        footer {
+            background: #041019;
+
+            color: white;
+
+            padding:
+                70px 0 25px;
+        }
+
+        .footer-grid {
+            display: grid;
+
+            grid-template-columns:
+                1.5fr 1fr 1fr 1fr;
+
+            gap: 45px;
+
+            padding-bottom:
+                50px;
+        }
+
+        .footer-logo {
+            margin-bottom: 20px;
+        }
+
+        footer h3 {
+            font-family: Georgia, serif;
+
+            font-weight: 400;
+
+            font-size: 19px;
+
+            margin-bottom: 19px;
+        }
+
+        footer p {
+            color: #96a5ad;
+
+            font-size: 13px;
+
+            max-width: 330px;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer li {
+            margin-bottom: 9px;
+        }
+
+        footer li a {
+            color: #9fadb4;
+
+            font-size: 13px;
+
+            transition:
+                color 0.3s ease;
+        }
+
+        footer li a:hover {
+            color: var(--gold-hell);
+        }
+
+
+        /* SOZIALE MEDIEN */
+
+        .social-media {
+            display: flex;
+
+            gap: 9px;
+
+            margin-top: 22px;
+        }
+
+        .social-media a {
+            width: 36px;
+            height: 36px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border:
+                1px solid rgba(255,255,255,0.15);
+
+            color: var(--gold-hell);
+
+            font-size: 11px;
+
+            transition:
+                0.3s ease;
+        }
+
+        .social-media a:hover {
+            background:
+                var(--gold);
+
+            color:
+                var(--dunkelblau);
+        }
+
+
+        /* COPYRIGHT */
+
+        .copyright {
+            padding-top:
+                22px;
+
+            border-top:
+                1px solid rgba(255,255,255,0.1);
+
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+            color: #728189;
+
+            font-size: 11px;
+        }
+
+        .copyright-links {
+            display: flex;
+
+            gap: 20px;
+        }
+
+
+        /* =========================================================
+           RESPONSIVE DESIGN
+           ========================================================= */
+
+        @media (max-width: 1000px) {
+
+            .menue {
+                gap: 16px;
+            }
+
+            .ueber-grid,
+            .warum-grid,
+            .kontakt-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .leistungen-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .premium-banner-inhalt {
+                grid-template-columns: 1fr;
+            }
+
+            .ablauf-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .bild-plakette {
+                right: 15px;
+            }
+        }
+
+
+        @media (max-width: 720px) {
+
+            .infoleiste {
+                display: none;
+            }
+
+            .nav-inner {
+                min-height: 72px;
+            }
+
+            .menue {
+                display: none;
+            }
+
+            .logo-name {
+                font-size: 18px;
+            }
+
+            .hero {
+                min-height: 680px;
+            }
+
+            .hero-inhalt {
+                padding:
+                    80px 0;
+            }
+
+            .hero h1 {
+                font-size: 50px;
+            }
+
+            section {
+                padding:
+                    75px 0;
+            }
+
+            .qualitaets-grid {
+                grid-template-columns:
+                    1fr 1fr;
+            }
+
+            .qualitaet {
+                border-bottom:
+                    1px solid var(--linie);
+            }
+
+            .qualitaet:nth-child(2) {
+                border-right: none;
+            }
+
+            .leistungen-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .warum-punkte {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .galerie-grid {
+                grid-template-columns:
+                    1fr;
+
+                grid-template-rows:
+                    repeat(5, 240px);
+            }
+
+            .galerie-bild:first-child {
+                grid-row: auto;
+            }
+
+            .ablauf-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .cta-inhalt {
+                flex-direction:
+                    column;
+
+                align-items:
+                    flex-start;
+            }
+
+            .formular-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .feld.ganz {
+                grid-column:
+                    auto;
+            }
+
+            .footer-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .copyright {
+                flex-direction:
+                    column;
+            }
+        }
+
+
+        @media (max-width: 450px) {
+
+            .hero h1 {
+                font-size: 43px;
+            }
+
+            .hero-text {
+                font-size: 16px;
+            }
+
+            .buttons {
+                flex-direction:
+                    column;
+
+                align-items:
+                    stretch;
+            }
+
+            .button {
+                width: 100%;
+            }
+
+            .bild-rahmen img,
+            .warum-bild img {
+                height: 390px;
+            }
+
+            .kontakt-box {
+                padding: 30px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     INFOLEISTE
+     ========================================================= -->
+
+<div class="infoleiste">
+
+    <div class="container infoleiste-inhalt">
+
+        <div>
+            Professionelle Reinigung · Zuverlässigkeit · Qualität
+        </div>
+
+        <div class="info-links">
+
+            <span>
+                ✉ info@pamirsolutions.de
+            </span>
+
+            <span>
+                ☎ +49 000 0000000
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     NAVIGATION
+     ========================================================= -->
+
+<header class="navigation">
+
+    <div class="container nav-inner">
+
+
+        <a href="#start" class="logo">
+
+            <div class="logo-symbol">
+                P
+            </div>
+
+            <div>
+
+                <div class="logo-name">
+                    PAMIR<span>SOLUTIONS</span>
+                </div>
+
+                <span class="logo-subtitle">
+                    REINIGUNG · QUALITÄT · VERTRAUEN
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <nav>
+
+            <ul class="menue">
+
+                <li>
+                    <a href="#start">
+                        Startseite
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#ueber-uns">
+                        Über uns
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#leistungen">
+                        Leistungen
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#galerie">
+                        Galerie
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#kontakt">
+                        Kontakt
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#kontakt"
+                        class="menue-angebot">
+
+                        Angebot anfragen
+
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     HERO / STARTSEITE
+     ========================================================= -->
+
+<section class="hero" id="start">
+
+    <div class="container">
+
+        <div class="hero-inhalt">
+
+            <div class="kleine-ueberschrift">
+                Premium Reinigungsservice
+            </div>
+
+            <h1>
+                Sauberkeit mit
+                <span>höchstem Anspruch.</span>
+            </h1>
+
+            <p class="hero-text">
+                Pamirsolutions steht für professionelle
+                Reinigung, zuverlässigen Service und
+                gepflegte Räume. Für Unternehmen,
+                Gewerbeimmobilien und private Kunden.
+            </p>
+
+            <div class="buttons">
+
+                <a
+                    href="#kontakt"
+                    class="button button-gold">
+
+                    Kostenloses Angebot
+
+                </a>
+
+                <a
+                    href="#leistungen"
+                    class="button button-transparent">
+
+                    Leistungen entdecken
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     QUALITÄTSLEISTE
+     ========================================================= -->
+
+<div class="qualitaetsleiste">
+
+    <div class="container qualitaets-grid">
+
+        <div class="qualitaet">
+
+            <div class="qualitaet-zahl">
+                100 %
+            </div>
+
+            <div class="qualitaet-text">
+                Zuverlässigkeit
+            </div>
+
+        </div>
+
+
+        <div class="qualitaet">
+
+            <div class="qualitaet-zahl">
+                Premium
+            </div>
+
+            <div class="qualitaet-text">
+                Qualitätsanspruch
+            </div>
+
+        </div>
+
+
+        <div class="qualitaet">
+
+            <div class="qualitaet-zahl">
+                Flexibel
+            </div>
+
+            <div class="qualitaet-text">
+                Individuelle Lösungen
+            </div>
+
+        </div>
+
+
+        <div class="qualitaet">
+
+            <div class="qualitaet-zahl">
+                Persönlich
+            </div>
+
+            <div class="qualitaet-text">
+                Direkter Kundenservice
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     ÜBER UNS
+     ========================================================= -->
+
+<section class="ueber-uns" id="ueber-uns">
+
+    <div class="container ueber-grid">
+
+
+        <div class="bild-rahmen">
+
+            <img
+                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1300&q=90"
+                alt="Professionelle Reinigung durch Pamirsolutions">
+
+            <div class="bild-plakette">
+
+                <strong>
+                    Pamirsolutions
+                </strong>
+
+                <span>
+                    Reinigung mit Anspruch
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="ueber-text">
+
+            <div class="section-kopf">
+
+                <div class="kleine-ueberschrift">
+                    Über Pamirsolutions
+                </div>
+
+                <h2>
+                    Mehr als Reinigung.
+                    Wir schaffen Qualität.
+                </h2>
+
+            </div>
+
+
+            <h3>
+                Saubere Räume schaffen Vertrauen.
+            </h3>
+
+            <p>
+                Pamirsolutions ist Ihr zuverlässiger
+                Ansprechpartner für professionelle
+                Reinigungsdienstleistungen.
+            </p>
+
+            <p>
+                Unser Anspruch ist es, Räumlichkeiten
+                nicht nur sauber, sondern nachhaltig
+                gepflegt und repräsentativ zu hinterlassen.
+            </p>
+
+
+            <ul class="vorteile">
+
+                <li>
+                    Professionelles und sorgfältiges Arbeiten
+                </li>
+
+                <li>
+                    Individuelle Reinigungskonzepte
+                </li>
+
+                <li>
+                    Zuverlässige Terminvereinbarung
+                </li>
+
+                <li>
+                    Transparente und faire Kommunikation
+                </li>
+
+                <li>
+                    Hoher Anspruch an Sauberkeit und Hygiene
+                </li>
+
+            </ul>
+
+
+            <a
+                href="#kontakt"
+                class="button button-gold">
+
+                Kontakt aufnehmen
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     LEISTUNGEN
+     ========================================================= -->
+
+<section class="leistungen" id="leistungen">
+
+    <div class="container">
+
+
+        <div class="section-kopf mitte">
+
+            <div class="kleine-ueberschrift">
+                Unsere Leistungen
+            </div>
+
+            <h2>
+                Professionelle Reinigung
+                für jeden Anspruch.
+            </h2>
+
+            <p>
+                Wir bieten individuelle Reinigungslösungen
+                für Unternehmen, Gewerbe, Immobilien und
+                private Haushalte.
+            </p>
+
+        </div>
+
+
+        <div class="leistungen-grid">
+
+
+            <!-- 01 -->
+
+            <article class="leistung">
+
+                <div class="leistung-bild">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=90"
+                        alt="Büroreinigung">
+
+                </div>
+
+                <div class="leistung-inhalt">
+
+                    <div class="leistung-nummer">
+                        LEISTUNG 01
+                    </div>
+
+                    <h3>
+                        Büroreinigung
+                    </h3>
+
+                    <p>
+                        Saubere und gepflegte Arbeitsplätze
+                        für ein angenehmes und professionelles
+                        Arbeitsumfeld.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- 02 -->
+
+            <article class="leistung">
+
+                <div class="leistung-bild">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1000&q=90"
+                        alt="Gebäudereinigung">
+
+                </div>
+
+                <div class="leistung-inhalt">
+
+                    <div class="leistung-nummer">
+                        LEISTUNG 02
+                    </div>
+
+                    <h3>
+                        Gebäudereinigung
+                    </h3>
+
+                    <p>
+                        Professionelle Reinigung und Pflege
+                        von Gebäuden und gewerblichen
+                        Immobilien.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- 03 -->
+
+            <article class="leistung">
+
+                <div class="leistung-bild">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1000&q=90"
+                        alt="Glas- und Fensterreinigung">
+
+                </div>
+
+                <div class="leistung-inhalt">
+
+                    <div class="leistung-nummer">
+                        LEISTUNG 03
+                    </div>
+
+                    <h3>
+                        Glasreinigung
+                    </h3>
+
+                    <p>
+                        Streifenfreie Reinigung von Fenstern,
+                        Glasflächen und weiteren transparenten
+                        Flächen.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- 04 -->
+
+            <article class="leistung">
+
+                <div class="leistung-bild">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1000&q=90"
+                        alt="Treppenhausreinigung">
+
+                </div>
+
+                <div class="leistung-inhalt">
+
+                    <div class="leistung-nummer">
+                        LEISTUNG 04
+                    </div>
+
+                    <h3>
+                        Treppenhausreinigung
+                    </h3>
+
+                    <p>
+                        Gepflegte Treppenhäuser und
+                        Eingangsbereiche für einen
+                        positiven ersten Eindruck.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- 05 -->
+
+            <article class="leistung">
+
+                <div class="leistung-bild">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1603712725038-e9334ae8f39f?auto=format&fit=crop&w=1000&q=90"
+                        alt="Grundreinigung">
+
+                </div>
+
+                <div class="leistung-inhalt">
+
+                    <div class="leistung-nummer">
+                        LEISTUNG 05
+                    </div>
+
+                    <h3>
+                        Grundreinigung
+                    </h3>
+
+                    <p>
+                        Intensive Reinigung für besonders
+                        beanspruchte oder gründlich zu
+                        pflegende Bereiche.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- 06 -->
+
+            <article class="leistung">
+
+                <div class="leistung-bild">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=1000&q=90"
+                        alt="Unterhaltsreinigung">
+
+                </div>
+
+                <div class="leistung-inhalt">
+
+                    <div class="leistung-nummer">
+                        LEISTUNG 06
+                    </div>
+
+                    <h3>
+                        Unterhaltsreinigung
+                    </h3>
+
+                    <p>
+                        Regelmäßige Reinigung nach einem
+                        individuell abgestimmten Zeitplan.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PREMIUM BANNER
+     ========================================================= -->
+
+<section class="premium-banner">
+
+    <div class="container premium-banner-inhalt">
+
+        <div>
+
+            <div class="kleine-ueberschrift">
+                Unser Qualitätsversprechen
+            </div>
+
+            <h2>
+                Sauberkeit, die man
+                <span>sehen und erleben</span>
+                kann.
+            </h2>
+
+            <p>
+                Von der ersten Beratung bis zur
+                regelmäßigen Reinigung legen wir Wert
+                auf klare Kommunikation, zuverlässige
+                Abläufe und sorgfältige Arbeit.
+            </p>
+
+        </div>
+
+
+        <div class="premium-box">
+
+            <strong>
+                Ihr Raum. Unser Anspruch.
+            </strong>
+
+            <p>
+                Wir entwickeln Reinigungslösungen,
+                die zu Ihren Räumlichkeiten, Ihrem
+                Zeitplan und Ihren Anforderungen passen.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     WARUM PAMIRSOLUTIONS
+     ========================================================= -->
+
+<section class="warum">
+
+    <div class="container warum-grid">
+
+
+        <div class="warum-bild">
+
+            <img
+                src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1300&q=90"
+                alt="Hochwertige Reinigungsarbeit">
+
+        </div>
+
+
+        <div>
+
+            <div class="section-kopf">
+
+                <div class="kleine-ueberschrift">
+                    Warum Pamirsolutions?
+                </div>
+
+                <h2>
+                    Qualität beginnt
+                    mit Vertrauen.
+                </h2>
+
+                <p>
+                    Wir möchten langfristige
+                    Kundenbeziehungen aufbauen und
+                    unseren Kunden einen Service bieten,
+                    auf den sie sich verlassen können.
+                </p>
+
+            </div>
+
+
+            <div class="warum-punkte">
+
+
+                <div class="warum-punkt">
+
+                    <div class="warum-icon">
+                        ✦
+                    </div>
+
+                    <h3>
+                        Hohe Qualität
+                    </h3>
+
+                    <p>
+                        Sorgfältige Reinigung mit einem
+                        hohen Qualitätsanspruch.
+                    </p>
+
+                </div>
+
+
+                <div class="warum-punkt">
+
+                    <div class="warum-icon">
+                        ✓
+                    </div>
+
+                    <h3>
+                        Zuverlässigkeit
+                    </h3>
+
+                    <p>
+                        Klare Vereinbarungen und
+                        zuverlässige Abläufe.
+                    </p>
+
+                </div>
+
+
+                <div class="warum-punkt">
+
+                    <div class="warum-icon">
+                        ◆
+                    </div>
+
+                    <h3>
+                        Flexibilität
+                    </h3>
+
+                    <p>
+                        Reinigungslösungen passend
+                        zu Ihren Anforderungen.
+                    </p>
+
+                </div>
+
+
+                <div class="warum-punkt">
+
+                    <div class="warum-icon">
+                        ★
+                    </div>
+
+                    <h3>
+                        Persönlicher Service
+                    </h3>
+
+                    <p>
+                        Direkte Kommunikation und
+                        individuelle Betreuung.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     GALERIE
+     ========================================================= -->
+
+<section class="galerie" id="galerie">
+
+    <div class="container">
+
+
+        <div class="section-kopf mitte">
+
+            <div class="kleine-ueberschrift">
+                Einblick
+            </div>
+
+            <h2>
+                Sauberkeit auf den ersten Blick.
+            </h2>
+
+            <p>
+                Moderne Räume verdienen eine
+                professionelle Pflege.
+            </p>
+
+        </div>
+
+
+        <div class="galerie-grid">
+
+
+            <div class="galerie-bild">
+
+                <img
+                    src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1300&q=90"
+                    alt="Modernes Büro">
+
+            </div>
+
+
+            <div class="galerie-bild">
+
+                <img
+                    src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=90"
+                    alt="Professionelle Reinigung">
+
+            </div>
+
+
+            <div class="galerie-bild">
+
+                <img
+                    src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=900&q=90"
+                    alt="Fensterreinigung">
+
+            </div>
+
+
+            <div class="galerie-bild">
+
+                <img
+                    src="https://images.unsplash.com/photo-1603712725038-e9334ae8f39f?auto=format&fit=crop&w=900&q=90"
+                    alt="Grundreinigung">
+
+            </div>
+
+
+            <div class="galerie-bild">
+
+                <img
+                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=90"
+                    alt="Gepflegte Räumlichkeiten">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ABLAUF
+     ========================================================= -->
+
+<section class="ablauf">
+
+    <div class="container">
+
+
+        <div class="section-kopf mitte">
+
+            <div class="kleine-ueberschrift">
+                Unser Ablauf
+            </div>
+
+            <h2>
+                Von der Anfrage
+                bis zur sauberen Lösung.
+            </h2>
+
+        </div>
+
+
+        <div class="ablauf-grid">
+
+
+            <div class="ablauf-schritt">
+
+                <div class="ablauf-kreis">
+                    01
+                </div>
+
+                <h3>
+                    Anfrage
+                </h3>
+
+                <p>
+                    Sie kontaktieren uns und
+                    beschreiben kurz Ihre
+                    Anforderungen.
+                </p>
+
+            </div>
+
+
+            <div class="ablauf-schritt">
+
+                <div class="ablauf-kreis">
+                    02
+                </div>
+
+                <h3>
+                    Beratung
+                </h3>
+
+                <p>
+                    Gemeinsam besprechen wir die
+                    passende Reinigungslösung.
+                </p>
+
+            </div>
+
+
+            <div class="ablauf-schritt">
+
+                <div class="ablauf-kreis">
+                    03
+                </div>
+
+                <h3>
+                    Angebot
+                </h3>
+
+                <p>
+                    Sie erhalten ein individuelles
+                    und transparentes Angebot.
+                </p>
+
+            </div>
+
+
+            <div class="ablauf-schritt">
+
+                <div class="ablauf-kreis">
+                    04
+                </div>
+
+                <h3>
+                    Reinigung
+                </h3>
+
+                <p>
+                    Unser Team führt die vereinbarten
+                    Leistungen professionell aus.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     KUNDENSTIMME
+     ========================================================= -->
+
+<section class="kundenstimme">
+
+    <div class="container">
+
+        <div class="zitat">
+
+            <div class="zitat-symbol">
+                “
+            </div>
+
+            <p>
+                Sauberkeit ist nicht nur das Ergebnis
+                unserer Arbeit – sie ist unser Anspruch
+                an jeden einzelnen Auftrag.
+            </p>
+
+            <small>
+                Pamirsolutions · Professionelle Reinigung
+            </small>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CALL TO ACTION
+     ========================================================= -->
+
+<section class="cta">
+
+    <div class="container cta-inhalt">
+
+        <div>
+
+            <h2>
+                Bereit für mehr Sauberkeit?
+            </h2>
+
+            <p>
+                Fordern Sie jetzt Ihr unverbindliches
+                Angebot von Pamirsolutions an.
+            </p>
+
+        </div>
+
+
+        <a
+            href="#kontakt"
+            class="button">
+
+            Angebot anfragen →
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     KONTAKT
+     ========================================================= -->
+
+<section class="kontakt" id="kontakt">
+
+    <div class="container">
+
+
+        <div class="section-kopf mitte">
+
+            <div class="kleine-ueberschrift">
+                Kontakt
+            </div>
+
+            <h2>
+                Wir freuen uns
+                auf Ihre Anfrage.
+            </h2>
+
+            <p>
+                Teilen Sie uns Ihre Wünsche mit.
+                Wir besprechen gerne die passende
+                Lösung für Ihre Räumlichkeiten.
+            </p>
+
+        </div>
+
+
+        <div class="kontakt-grid">
+
+
+            <!-- KONTAKT INFORMATIONEN -->
+
+            <div class="kontakt-box">
+
+                <h3>
+                    Pamirsolutions
+                </h3>
+
+                <p>
+                    Ihr Ansprechpartner für
+                    professionelle und zuverlässige
+                    Reinigungsdienstleistungen.
+                </p>
+
+
+                <div class="kontakt-detail">
+
+                    <strong>
+                        Telefon
+                    </strong>
+
+                    <a href="tel:+490000000000">
+                        +49 000 0000000
+                    </a>
+
+                </div>
+
+
+                <div class="kontakt-detail">
+
+                    <strong>
+                        E-Mail
+                    </strong>
+
+                    <a href="mailto:info@pamirsolutions.de">
+                        info@pamirsolutions.de
+                    </a>
+
+                </div>
+
+
+                <div class="kontakt-detail">
+
+                    <strong>
+                        Adresse
+                    </strong>
+
+                    <span>
+                        Ihre Straße 00<br>
+                        00000 Deutschland
+                    </span>
+
+                </div>
+
+
+                <div class="kontakt-detail">
+
+                    <strong>
+                        Erreichbarkeit
+                    </strong>
+
+                    <span>
+                        Montag – Freitag<br>
+                        08:00 – 18:00 Uhr
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- KONTAKTFORMULAR -->
+
+            <div class="formular">
+
+                <h3>
+                    Kostenloses Angebot anfragen
+                </h3>
+
+
+                <!--
+                    HINWEIS:
+                    Dieses Formular ist zunächst optisch fertig.
+                    Für den tatsächlichen E-Mail-Versand muss
+                    später ein Formular-Dienst angeschlossen werden.
+                -->
+
+
+                <form action="#" method="post">
+
+
+                    <div class="formular-grid">
+
+
+                        <div class="feld">
+
+                            <label for="vorname">
+                                Vor- und Nachname *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="vorname"
+                                name="name"
+                                placeholder="Ihr Name"
+                                required>
+
+                        </div>
+
+
+                        <div class="feld">
+
+                            <label for="email">
+                                E-Mail-Adresse *
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Ihre E-Mail-Adresse"
+                                required>
+
+                        </div>
+
+
+                        <div class="feld">
+
+                            <label for="telefon">
+                                Telefonnummer
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="telefon"
+                                name="telefon"
+                                placeholder="Ihre Telefonnummer">
+
+                        </div>
+
+
+                        <div class="feld">
+
+                            <label for="leistung">
+                                Gewünschte Leistung
+                            </label>
+
+                            <select
+                                id="leistung"
+                                name="leistung">
+
+                                <option value="">
+                                    Bitte auswählen
+                                </option>
+
+                                <option>
+                                    Büroreinigung
+                                </option>
+
+                                <option>
+                                    Gebäudereinigung
+                                </option>
+
+                                <option>
+                                    Glasreinigung
+                                </option>
+
+                                <option>
+                                    Treppenhausreinigung
+                                </option>
+
+                                <option>
+                                    Grundreinigung
+                                </option>
+
+                                <option>
+                                    Unterhaltsreinigung
+                                </option>
+
+                                <option>
+                                    Sonstige Leistung
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="feld ganz">
+
+                            <label for="nachricht">
+                                Ihre Nachricht *
+                            </label>
+
+                            <textarea
+                                id="nachricht"
+                                name="nachricht"
+                                placeholder="Beschreiben Sie kurz, welche Reinigung Sie benötigen."
+                                required></textarea>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="button button-gold">
+
+                        Anfrage senden →
+
+                    </button>
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer>
+
+    <div class="container">
+
+
+        <div class="footer-grid">
+
+
+            <!-- UNTERNEHMEN -->
+
+            <div>
+
+                <div class="logo footer-logo">
+
+                    <div class="logo-symbol">
+                        P
+                    </div>
+
+                    <div>
+
+                        <div class="logo-name">
+                            PAMIR<span>SOLUTIONS</span>
+                        </div>
+
+                        <span class="logo-subtitle">
+                            REINIGUNG · QUALITÄT · VERTRAUEN
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+                    Professionelle Reinigungsleistungen
+                    mit Anspruch, Zuverlässigkeit und
+                    persönlichem Service.
+                </p>
+
+
+                <div class="social-media">
+
+                    <a
+                        href="#"
+                        aria-label="Facebook">
+                        f
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="Instagram">
+                        IG
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="YouTube">
+                        ▶
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="LinkedIn">
+                        IN
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- NAVIGATION -->
+
+            <div>
+
+                <h3>
+                    Navigation
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#start">
+                            Startseite
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#ueber-uns">
+                            Über uns
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#leistungen">
+                            Leistungen
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#galerie">
+                            Galerie
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#kontakt">
+                            Kontakt
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- LEISTUNGEN -->
+
+            <div>
+
+                <h3>
+                    Leistungen
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#leistungen">
+                            Büroreinigung
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#leistungen">
+                            Gebäudereinigung
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#leistungen">
+                            Glasreinigung
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#leistungen">
+                            Grundreinigung
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#leistungen">
+                            Unterhaltsreinigung
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- KONTAKT -->
+
+            <div>
+
+                <h3>
+                    Kontakt
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="tel:+490000000000">
+                            +49 000 0000000
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:info@pamirsolutions.de">
+                            info@pamirsolutions.de
+                        </a>
+                    </li>
+
+                    <li>
+                        Deutschland
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="copyright">
+
+            <div>
+                © 2026 Pamirsolutions.
+                Alle Rechte vorbehalten.
+            </div>
+
+            <div class="copyright-links">
+
+                <a href="#">
+                    Impressum
+                </a>
+
+                <a href="#">
+                    Datenschutz
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
