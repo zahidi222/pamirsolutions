@@ -23,27 +23,31 @@
            ========================================================= */
 
         :root {
-            --dunkelblau: #071722;
-            --blau: #0d2534;
-            --blau-hell: #16394c;
+            --dunkelblau: #06452f;
+            --blau: #087a56;
+            --blau-hell: #12a875;
 
             --gold: #c6a15b;
             --gold-hell: #e1c783;
             --gold-dunkel: #9f7d3e;
 
-            --elfenbein: #f7f4ed;
+            --gruen: #079b68;
+            --gruen-hell: #22c487;
+            --gruen-soft: #e6f8ef;
+
+            --elfenbein: #eefbf5;
             --weiss: #ffffff;
 
-            --text: #26343d;
-            --text-hell: #6f7a80;
+            --text: #234238;
+            --text-hell: #6f7f79;
 
-            --linie: #e4ded2;
+            --linie: #cfe9dd;
 
             --schatten:
-                0 25px 70px rgba(5, 19, 29, 0.13);
+                0 25px 70px rgba(3, 58, 42, 0.13);
 
             --schatten-klein:
-                0 12px 35px rgba(5, 19, 29, 0.09);
+                0 12px 35px rgba(3, 58, 42, 0.09);
         }
 
 
@@ -74,7 +78,7 @@
 
         img {
             max-width: 100%;
-            display: blue;
+            display: block;
         }
 
         a {
@@ -100,7 +104,7 @@
            ========================================================= */
 
         .infoleiste {
-            background: #041019;
+            background: #033c29;
             color: #cbd5da;
             font-size: 12px;
             letter-spacing: 0.3px;
@@ -130,9 +134,10 @@
             z-index: 999;
 
             background:
-                rgba(7, 23, 34, 0.97);
+                linear-gradient(135deg, rgba(4, 92, 62, 0.98), rgba(7, 155, 104, 0.96));
 
             backdrop-filter: blur(16px);
+            box-shadow: 0 8px 28px rgba(3, 91, 61, 0.18);
 
             border-bottom:
                 1px solid rgba(255,255,255,0.08);
@@ -156,34 +161,28 @@
         }
 
         .logo-symbol {
-            width: 45px;
-            height: 45px;
+            width: 52px;
+            height: 52px;
+            padding: 5px;
 
-            border:
-                1px solid var(--gold);
+            border: 2px solid rgba(255,255,255,0.85);
+            border-radius: 14px;
 
             display: flex;
             align-items: center;
             justify-content: center;
 
-            color: var(--gold-hell);
+            background: white;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.15);
 
-            font-family: Georgia, serif;
-            font-size: 21px;
-
-            position: relative;
+            overflow: hidden;
         }
 
-        .logo-symbol::after {
-            content: "";
-
-            position: absolute;
-
-            width: 31px;
-            height: 31px;
-
-            border:
-                1px solid rgba(225,199,131,0.4);
+        .logo-symbol img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
         }
 
         .logo-name {
@@ -196,7 +195,7 @@
         }
 
         .logo-name span {
-            color: var(--gold-hell);
+            color: #bff3df;
         }
 
         .logo-subtitle {
@@ -233,22 +232,22 @@
         }
 
         .menue a:hover {
-            color: var(--gold-hell);
+            color: #bff3df;
         }
 
         .menue-angebot {
-            border:
-                1px solid var(--gold);
-
-            padding:
-                11px 19px;
-
-            color: var(--gold-hell) !important;
+            border: 1px solid rgba(255,255,255,0.65);
+            padding: 11px 19px;
+            border-radius: 999px;
+            background: rgba(255,255,255,0.10);
+            color: white !important;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.10);
         }
 
         .menue-angebot:hover {
-            background: var(--gold);
+            background: white;
             color: var(--dunkelblau) !important;
+            border-color: white;
         }
 
 
@@ -267,9 +266,9 @@
             background:
                 linear-gradient(
                     90deg,
-                    rgba(3, 14, 22, 0.96) 0%,
-                    rgba(3, 14, 22, 0.87) 42%,
-                    rgba(3, 14, 22, 0.30) 100%
+                    rgba(3, 67, 46, 0.96) 0%,
+                    rgba(5, 104, 72, 0.86) 42%,
+                    rgba(7, 155, 104, 0.34) 100%
                 ),
 
                 url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=2200&q=90")
@@ -287,7 +286,7 @@
         }
 
         .kleine-ueberschrift {
-            color: var(--gold-hell);
+            color: #bff3df;
 
             font-size: 12px;
 
@@ -317,7 +316,7 @@
         }
 
         .hero h1 span {
-            color: var(--gold-hell);
+            color: #bff3df;
         }
 
         .hero-text {
@@ -361,12 +360,13 @@
         }
 
         .button-gold {
-            background: var(--gold);
-            color: var(--dunkelblau);
+            background: var(--gruen-hell);
+            color: white;
+            box-shadow: 0 8px 22px rgba(8, 127, 91, 0.22);
         }
 
         .button-gold:hover {
-            background: var(--gold-hell);
+            background: var(--gruen);
 
             transform:
                 translateY(-2px);
@@ -459,7 +459,7 @@
         }
 
         .section-kopf .kleine-ueberschrift {
-            color: var(--gold-dunkel);
+            color: var(--gruen);
 
             margin-bottom: 12px;
         }
@@ -544,7 +544,7 @@
         .bild-plakette strong {
             display: block;
 
-            color: var(--gold-hell);
+            color: #bff3df;
 
             font-family: Georgia, serif;
 
@@ -614,7 +614,7 @@
             align-items: center;
             justify-content: center;
 
-            background: var(--gold);
+            background: var(--gruen-hell);
 
             color: var(--dunkelblau);
 
@@ -661,7 +661,7 @@
                 var(--schatten);
 
             border-color:
-                var(--gold);
+                var(--gruen);
         }
 
         .leistung-bild {
@@ -690,7 +690,7 @@
         }
 
         .leistung-nummer {
-            color: var(--gold-dunkel);
+            color: var(--gruen);
 
             font-family: Georgia, serif;
 
@@ -759,7 +759,7 @@
         }
 
         .premium-banner h2 span {
-            color: var(--gold-hell);
+            color: #bff3df;
         }
 
         .premium-banner p {
@@ -783,7 +783,7 @@
         .premium-box strong {
             display: block;
 
-            color: var(--gold-hell);
+            color: #bff3df;
 
             font-family: Georgia, serif;
 
@@ -852,14 +852,14 @@
 
         .warum-punkt:hover {
             border-color:
-                var(--gold);
+                var(--gruen);
 
             box-shadow:
                 var(--schatten-klein);
         }
 
         .warum-icon {
-            color: var(--gold-dunkel);
+            color: var(--gruen);
 
             font-size: 25px;
 
@@ -969,7 +969,7 @@
             margin:
                 0 auto 20px;
 
-            color: var(--gold-dunkel);
+            color: var(--gruen);
 
             font-family: Georgia, serif;
 
@@ -1043,7 +1043,7 @@
         }
 
         .zitat small {
-            color: var(--gold-hell);
+            color: #bff3df;
 
             text-transform: uppercase;
 
@@ -1064,8 +1064,8 @@
             background:
                 linear-gradient(
                     110deg,
-                    var(--gold),
-                    var(--gold-hell)
+                    #079b68,
+                    #20c486
                 );
         }
 
@@ -1165,7 +1165,7 @@
         .kontakt-detail strong {
             display: block;
 
-            color: var(--gold-hell);
+            color: #bff3df;
 
             text-transform: uppercase;
 
@@ -1256,7 +1256,7 @@
         .feld select:focus,
         .feld textarea:focus {
             border-color:
-                var(--gold);
+                var(--gruen);
         }
 
         .feld textarea {
@@ -1271,7 +1271,7 @@
            ========================================================= */
 
         footer {
-            background: #041019;
+            background: #023824;
 
             color: white;
 
@@ -1331,7 +1331,7 @@
         }
 
         footer li a:hover {
-            color: var(--gold-hell);
+            color: #bff3df;
         }
 
 
@@ -1357,7 +1357,7 @@
             border:
                 1px solid rgba(255,255,255,0.15);
 
-            color: var(--gold-hell);
+            color: #bff3df;
 
             font-size: 11px;
 
@@ -1458,6 +1458,12 @@
 
             .logo-name {
                 font-size: 18px;
+            }
+
+            .logo-symbol {
+                width: 46px;
+                height: 46px;
+                border-radius: 12px;
             }
 
             .hero {
@@ -1629,7 +1635,7 @@
         <a href="#start" class="logo">
 
             <div class="logo-symbol">
-                P
+                <img src="logo.png" alt="Pamirsolutions Logo">
             </div>
 
             <div>
